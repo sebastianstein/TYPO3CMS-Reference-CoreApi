@@ -41,6 +41,7 @@ management system TYPO3.
    :caption: TYPO3 A-Z
    :maxdepth: 1
 
+   Api/Index
    ApiOverview/Ajax/Index
    ApiOverview/Assets/Index
    ApiOverview/Authentication/Index

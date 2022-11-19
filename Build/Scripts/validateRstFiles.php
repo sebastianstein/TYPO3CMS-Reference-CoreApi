@@ -161,6 +161,12 @@ class validateRstFiles
                 'title' => 'admonition warning forbidden',
                 'message' => 'use ".. attention" instead of ".. important"',
             ],
+            [
+                'type' => 'include',
+                'regex' => '#(..[[:blank:]]*code-block:: [a-zA-Z]+)\n[[:blank:]]*[^:[:blank:]\n]#m',
+                'title' => 'malformed code-block',
+                'message' => 'a `.. code-block:: something` must be followed by a subdirective (i.e :caption: or a new line)',
+            ],
         ];
 
         foreach ($checkForForbidden as $values) {
